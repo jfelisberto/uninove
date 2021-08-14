@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Regras de precedência</title>
+    <!-- abaixo segue a linha de codigo necessaria para avisar o navegadro que ha um arquivo CSS Externo -->
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <!-- aqui fazendo uso do estilo incormporado ao documento HTML -->
+    <style type="text/css">
+      h1 {
+        margin-left: 30px;
+      }
+      p {
+        color: violet;
+      }
+    </style>
+  </head>
+  <!-- aqui fazendo uso do estilo in-line -->
+  <body style="background-color:#FFF;">
+    <a href="#" onclick="window.history.go(-1);">Voltar</a>
+
+    <h1>Este é um cabeçalho de nível 1 da cor azul (definido no CSS externo) e com margem de 30px à esquerda (definido no CSS Interno)</h1>
+
+    <p class="paragrafo">
+      Os paragrafos com cor verde tem: margem de 45px espaçamento de 5px; definidos CSS externo
+    </p>
+
+    <p class="paragrafo">
+      Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Diuretics paradis num copo é motivis de denguis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. A ordem dos tratores não altera o pão duris.
+    </p>
+
+    <p class="paragrafo">
+      Per aumento de cachacis, eu reclamis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+    </p>
+
+    <p style="color: teal; margin-left: 105px;">
+        Este é um paragrafo de cor teal com margem esquerda de 105px, definido por CSS inline
+    </p>
+
+    <p>
+      Este paragrafo foi estilizado com CSS interno
+    </p>
+
+  </body>
+</html>

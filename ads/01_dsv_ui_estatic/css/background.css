@@ -1,0 +1,52 @@
+
+    @font-face {
+      font-family: MinhaFonte;
+      src: url(font/sansation_light.woff);
+    }
+    @font-face {
+      font-family: MinhaFonte;
+      src: url(font/sansation_bold.woff);
+      font-weight: bold;
+    }
+    body { border: 10px solid #ff0; font-family: MinhaFonte; }
+    h1 {
+      border: 5px dotted #fc3;
+      margin: 10px;
+      padding: 5px;
+      font-size: 30px;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    h3 {
+      border: 3px double #6ea;
+      margin: 10px;
+      padding: 5px;
+      font-size: 100%;
+      font-style: oblique;
+      text-align: center;
+      text-decoration: overline;
+    }
+    h5 {
+      border: outset;
+      margin: 15px;
+      padding: 10px;
+      text-decoration: line-through;
+    }
+    p {
+      border: 3px solid #0f0;
+      margin: 10px;
+      padding: 10px 5px 15px 25px;
+      font-style: normal;
+      line-height: 20px;
+      text-align: justify;
+      text-indent: 30px;
+    }
+    .font-family {
+      font-family: Courier, Georgia, Serif;
+      font-size: 1.2em;
+      font-variant: small-caps;
+      text-align: right;
+    }
+    .minuscula {text-transform: lowercase;}
+    .maiuscula {text-transform: uppercase;}
+    .primeira_letra {text-transform: capitalize;}
