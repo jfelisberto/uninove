@@ -1,0 +1,296 @@
+/* 
+
+COMPLETAR O CÓDIGO ABAIXO PREENCHENDO AS FORMATAÇÕES DE CADA SELETOR 
+DE ACORDO COM O ARQUIVO STYLE_CSS_COMPLETO.PDF
+
+*/
+
+body 
+{
+
+
+}
+
+h1, h2, h3 
+{
+	
+
+}
+
+h1 
+{
+	
+
+}
+
+h2 
+{
+	
+
+}
+
+h3 
+{
+	
+
+}
+
+p, ol, ul 
+{
+	
+
+}
+
+a 
+{
+	
+
+}
+
+a:hover 
+{
+	
+
+}
+
+a img 
+{
+	
+
+}
+
+/* Header */
+
+#header 
+{
+	
+
+}
+
+#header a 
+{
+	
+
+}
+
+/* Logo */
+
+#logo 
+{
+	
+
+
+}
+
+#logo h1, #logo p 
+{
+	
+
+
+}
+
+#logo h1 
+{
+	
+
+}
+
+/* Menu */
+
+#menu 
+{
+	
+
+}
+
+#menu ul 
+{
+	
+
+}
+
+#menu li 
+{
+	
+
+}
+
+#menu a 
+{
+	
+
+}
+
+#menu a:hover 
+{
+
+	
+}
+
+#menu .first 
+{
+	
+
+}
+
+#menu .active a 
+{
+
+
+}
+
+/* Page */
+
+#page 
+{
+	
+
+}
+
+/* Content */
+
+#content 
+{
+
+	
+
+}
+
+.post 
+{
+	
+
+}
+
+.post .title 
+{
+	
+
+
+}
+
+.post .title a 
+{
+	
+
+}
+
+.post .entry 
+{
+
+
+}
+
+.post .meta 
+{
+	
+
+}
+
+.post .byline 
+{
+	
+
+}
+
+/* Sidebar */
+
+#sidebar 
+{
+	
+
+}
+
+#sidebar-bgtop 
+{
+	
+
+}
+
+#sidebar-bgbtm 
+{
+	
+
+}
+
+#sidebar-content 
+{
+	
+
+}
+
+#sidebar ul 
+{
+	
+
+}
+
+#sidebar li ul 
+{
+	
+
+}
+
+#sidebar h2 
+{
+	
+
+}
+
+#sidebar a 
+{
+	
+
+}
+
+#sidebar a:hover 
+{
+	
+
+}
+
+/* Search */
+
+#search 
+{
+
+
+}
+
+#search form 
+{
+	
+
+}
+
+#search fieldset 
+{
+	
+
+}
+
+#search #s 
+{
+	
+
+}
+
+/* Footer */
+
+#footer 
+{
+	
+
+}
+
+#footer p 
+{
+	
+
+}
+
+#footer a 
+{
+	
+
+}
