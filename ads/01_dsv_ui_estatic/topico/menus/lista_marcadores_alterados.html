@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Juliano Felisberto" />
+    <meta name="Generation" content="VS Code" />
+    <title>Listas com marcadores alterados</title>
+    <link rel="shortcut icon" href="../../img/favico.ico" type="image/x-ico">
+    <style>
+      ul {
+        list-style-type: none; /* remove os marcadores da lista */
+        padding: 0;
+        margin: 0;
+      }
+
+      ol {
+        list-style-type: none; /* remove os marcadores da lista */
+        padding: 20px;
+        margin: 0;
+      }
+      li {
+        padding-left: 16px;
+      }
+
+      li:before { /* formata o marcador*/
+        content: "&"; /* insere o marcador desejado */
+        padding-right: 8px;
+        color: blue; /*altera a cor do marcados*/
+        font-size:2em; /* altera o tamanho do marcador*/
+      }
+    </style>
+  </head>
+<body>
+  <h4>Lista ordenada com marcadores alterados</h4>
+  <ol>
+    <li>Item da lista 1</li>
+    <li>Item da lista 2</li>
+    <li>Item da lista 3</li>
+  </ol>
+  <h4>Lista não ordenada com marcadores alterado</h4>
+  <ul>
+    <li>Item da lista 1</li>
+    <li>Item da lista 2</li>
+    <li>Item da lista 3</li>
+  </ul>
+</body>
+</html>
