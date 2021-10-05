@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Juliano Felisberto" />
+    <meta name="Generation" content="VS Code" />
+    <title>Validando Formulário</title>
+    <link rel="shortcut icon" href="../../img/favico.ico" type="image/x-ico">
+    <!-- START Bootstrap -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        font-size: 1.5em;
+        margin: 25px !important;
+        padding:0;
+        padding-bottom:60px;
+        font-size:20px;
+      }
+
+      fieldset{
+        padding:8px;
+        text-align:left;
+        border:2px solid #5a5a5a;;
+        margin-bottom: 10px;
+      }
+
+      legend {
+        background:#FFFFFF;
+        padding:2px;
+        font-weight: bold;
+      }
+
+      label {
+        font-size: 15px;
+        margin-left: 5px;
+      }
+
+      input{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+<body>
+  <div class="content">
+    <h2>Validando formulário com HTML 5</h2>
+    <form action="/process/teste.php" method="POST" id="cliente" name="cadastro_de_cliente" class="form-vertical" role="form">
+      <fieldset>
+        <legend>Login</legend>
+        <div class="row">
+          <div class="form-group">
+            <keygen name="seguro" />
+            <label for="login">Login: </label><input type="text" name="login" maxlength="20" class="form-control" required pattern="[a-z\s]+$" placeholder="Digite somente letras minusculas" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="">Senha: </label><input type="password" name="senha" maxlength="8" class="form-control" required />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <div class="row">
+          <div class="form-group">
+            <label for="">Informe seu e-mail: </label><input type="email" name="email" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="meu_email@exemplo.com" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="">Informe o seu telefone: </label><input type="tel" name="telefone" class="form-control" required pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="(xx) xxxxx-xxxx" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            Sexo:<br />
+            <div class="form-check">
+              <input type="radio" name="sexo" id="M" value="M" class="form-check-input" required /><label for="M" class="form-check-label"> Masculino</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="sexo" id="F" value="F" class="form-check-input" required /><label for="F" class="form-check-label">Feminino</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Caixa de Seleção</legend>
+        <div class="row">
+          <div class="form-group">
+            <label for="">Selecione um estado:</label>
+            <select name="estado" class="form-select" required>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="nenhum" selected>Selecione</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="">Informe a marca do seu carro:</label>
+            <input list="carros" class="form-control" required />
+            <datalist id="carros">
+              <option value="Renault">
+              <option value="BMW">
+              <option value="Fiat">
+              <option value="GM">
+              <option value="Honda">
+              <option value="Audi">
+            </datalist>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Outras informações</legend>
+        <div class="row">
+          <div class="form-group col-6">
+            Selecione data de seu voo: <input type="date" name="data" class="form-control" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2021-01-01" max="2022-12-31" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            Informe a hora de seu voo: <input type="time" name="hora" class="form-control" pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            Inform seu assento no voo de 1 à 100: <input type="number" name="numero_restrito" min="1" max="100" step="1" class="form-control" />
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <div class="form-group">
+          <input type="button" value="Cancelar" class="btn btn-danger" />&nbsp;&nbsp;
+          <input type="reset" value="Limpar" class="btn btn-warning" />&nbsp;&nbsp;
+          <input type="submit" value="Enviar" class="btn btn-success" />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

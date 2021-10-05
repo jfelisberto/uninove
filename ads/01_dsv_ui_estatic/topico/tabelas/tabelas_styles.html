@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Juliano Felisberto" />
+    <meta name="Generation" content="VS Code" />
+    <title>Formatando tabelas</title>
+    <link rel="shortcut icon" href="../../img/favico.ico" type="image/x-ico">
+
+    <style>
+      table, th, td {
+        border-collapse: separate;
+        border: 1px solid #0f0;
+        border-spacing: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+<body>
+  <h1>Cabeçalho de tabelas e legendas</h1>
+  <table>
+    <caption>Cabeçalho horizontal</caption>
+    <tr>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Celular</th>
+      <th>Telefone</th>
+    </tr>
+    <tr>
+      <td>Jose Bonifacio</td>
+      <td>jose.bonifacio@ymail.com</td>
+      <td>11 9 8545-4589</td>
+      <td>11 2365-6551</td>
+    </tr>
+  </table>
+  <br />
+  <table>
+    <caption>Cabeçalho vertical</caption>
+    <tr>
+      <th>Nome</th>
+      <td>Jose Bonifacio</td>
+    </tr>
+    <tr>
+      <th>E-mail</th>
+      <td>jose.bonifacio@ymail.com</td>
+    </tr>
+    <tr>
+      <th>Celular</th>
+      <td>11 9 8545-4589</td>
+    </tr>
+    <tr>
+      <th>Telefone</th>
+      <td>11 2365-6551</td>
+    </tr>
+  </table>
+  <br />
+  <h1>Mesclando celulas</h1>
+  <table>
+    <tr>
+      <th colspan="3">Tabela com colunas mescladas colspan = 3</th>
+    </tr>
+    <tr>
+      <td>conteúdo 1 da linha 2</td>
+      <td>conteúdo 2 da linha 2</td>
+      <td>conteúdo 3 da linha 2</td>
+    </tr>
+    <tr>
+      <td>conteúdo 1 da linha 3</td>
+      <td>conteúdo 2 da linha 3</td>
+      <td>conteúdo 3 da linha 3</td>
+    </tr>
+  </table>
+  <br />
+  <h1>Mesclando linhas</h1>
+  <table>
+    <tr>
+      <th rowspan="3">Tabela com linhas mescladas rowspan = 3</th>
+      <td>conteúdo 2 da linha 1</td>
+      <td>conteúdo 3 da linha 1</td>
+      <td>conteúdo 4 da linha 1</td>
+    </tr>
+    <tr>
+      <td>conteúdo 2 da linha 2</td>
+      <td>conteúdo 3 da linha 2</td>
+      <td>conteúdo 4 da linha 2</td>
+    </tr>
+    <tr>
+      <td>conteúdo 2 da linha 3</td>
+      <td>conteúdo 3 da linha 3</td>
+      <td>conteúdo 4 da linha 3</td>
+    </tr>
+    <tr>
+      <td>conteúdo 1 da linha 4</td>
+      <td>conteúdo 2 da linha 4</td>
+      <td>conteúdo 3 da linha 4</td>
+      <td>conteúdo 4 da linha 3</td>
+    </tr>
+  </table>
+  <br />
+  <h1>Formatando um grupo de colunas</h1>
+  <table>
+    <caption>Legenda da tabela</caption>
+    <colgroup>
+      <col span="3" style="background-color: #f00;" />
+      <col style="background-color: #ff0;"/>
+    </colgroup>
+    <tr>
+      <th rowspan="3">Tabela com linhas mescladas rowspan = 3</th>
+      <td>conteúdo 2 da linha 1</td>
+      <td>conteúdo 3 da linha 1</td>
+      <td>conteúdo 4 da linha 1</td>
+    </tr>
+    <tr>
+      <td>conteúdo 2 da linha 2</td>
+      <td>conteúdo 3 da linha 2</td>
+      <td>conteúdo 4 da linha 2</td>
+    </tr>
+    <tr>
+      <td>conteúdo 2 da linha 3</td>
+      <td>conteúdo 3 da linha 3</td>
+      <td>conteúdo 4 da linha 3</td>
+    </tr>
+    <tr>
+      <td>conteúdo 1 da linha 4</td>
+      <td>conteúdo 2 da linha 4</td>
+      <td>conteúdo 3 da linha 4</td>
+      <td>conteúdo 4 da linha 3</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</body>
+</html>

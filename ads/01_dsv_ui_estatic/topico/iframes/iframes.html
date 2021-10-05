@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Juliano Felisberto" />
+    <meta name="Generation" content="VS Code" />
+    <title>Iframes</title>
+    <link rel="shortcut icon" href="../../img/favico.ico" type="image/x-ico">
+    <style>
+      .container {
+        text-align: center;
+      }
+      .iframeVideo {
+        width: 700px;;
+        height: 300px;
+        border: none;
+        border-radius: 15px;
+      }
+      .iframePage {
+        width: 450px;;
+        height: 600px;
+        border: 1px solid #18cc18;
+      }
+      .iframePageNoScroll {
+        width: 450px;;
+        height: 600px;
+        border: 1px solid #18cc18;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <iframe src="https://www.youtube.com/embed/dpmAY059TTY" class="iframeVideo"></iframe>
+    <br />
+    <iframe src="http://www.uninove.br" class="iframePageNoScroll" scrolling="no"></iframe>
+
+    <iframe src="http://www.uninove.br" class="iframePage" scrolling="yes"></iframe>
+  </div>
+</body>
+</html>

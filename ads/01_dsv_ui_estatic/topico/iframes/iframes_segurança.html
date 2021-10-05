@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Juliano Felisberto" />
+    <meta name="Generation" content="VS Code" />
+    <title>Iframes - links</title>
+    <link rel="shortcut icon" href="../../img/favico.ico" type="image/x-ico">
+  </head>
+  <body>
+    <h1>iframe sem atributo de segurança</h1>
+    <iframe src="http://www.uninove.br" style="width:100%;height:400px;border:none;overflow:hidden;" scrolling="auto" name="teste_iframe"></iframe>
+    <br />
+    <h1>iframe com atributo de segurança</h1>
+    <h4>O atributo sandbox.</h4>
+    <iframe src="http://www.uninove.br" style="width:100%;height:400px;border:none;overflow:hidden;" scrolling="auto" name="teste_iframe" sandbox=""></iframe>
+    <p>
+      O atributo sandbox desativa todas as ameaças que poderiam existir em um conteúdo que fosse disponibilizado por meio de um iframe tais como:<br />
+      <ul>
+        <li>
+          Execução de plugins;
+        </li>
+        <li>
+          Ativação de formulários;
+        </li>
+        <li>
+          Execução de scripts ;
+        </li>
+        <li>
+          Ativação de links fora do iframe;
+        </li>
+        <li>
+          Acesso a cookies;
+        </li>
+        <li>
+          Armazenamento local;
+        </li>
+        <li>
+          Acesso a outras páginas no mesmo domínio (origem).
+        </li>
+      </ul>
+    </p>
+
+    <h4>O atributo "srcdoc"</h4>
+    <iframe src="http://www.uninove.br" style="width:100%;height:400px;border:none;overflow:hidden;" scrolling="auto" name="teste_iframe" sandbox="" srcdoc="teste de segurança"></iframe>
+    <p>
+      Com o uso deste atributo (recomenda-se utilizar em conjunto com o sandbox) caso o navegador o contemple, o conteúdo disponibilizado no srcdoc será exibido e o link do src será ignorado.<br />
+      No caso do o site da Uninove não seria executado e em seu lugar seria exibido o texto "teste de segurança".
+    </p>
+
+    <h4>O atributo "seamless"</h4>
+    <iframe src="http://www.uninove.br" style="width:100%;height:400px;border:none;overflow:auto;" scrolling="auto" name="teste_iframe"  seamless></iframe>
+    <p>
+      Com o uso deste atributo o conteúdo do iframe será exibido como sendo parte da página, ou seja, bordas e barras de rolagem não aparecerão. Mas não é apenas visualmente que isto acontece, ao utilizar este atributos algumas vantagens de ter o conteúdo do iframe considerado como "parte" de sua página, dentre outras,  são: <br />
+      <ul>
+        <li>
+          Links do iframe abrirão na janela pai;
+        </li>
+        <li>
+          CSS do iframe será adicionado a cascata da página em que o iframe está inserido;
+        </li>
+        <li>
+          Se for visualizado por um leitor de tela, o conteúdo será lido como conteúdo da página (ou seja, o leitor não avisa que é um conteúdo externo).
+        </li>
+      </ul><br />
+      Para utilizar este atributo, devido a suas características, você precisa ter certeza que não há nenhum conteúdo malicioso no conteúdo que será aberto no iframe, ok?
+    </p>
+  </body>
+</html>
